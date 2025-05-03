@@ -1,73 +1,111 @@
-# Welcome to your Lovable project
 
-## Project info
+# College Event Aggregator Platform
 
-**URL**: https://lovable.dev/projects/b8c4c6c1-7b00-4847-8003-93e1560b89a0
+A web application that aggregates tech events like hackathons, tech talks, and workshops from multiple college websites, allowing students to discover and submit events easily.
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **Event Dashboard**: Browse upcoming tech events with comprehensive details
+- **Advanced Filtering**: Search and filter events by date, type, college name, location, etc.
+- **Event Submission**: Allow users to manually submit new events
+- **Responsive Design**: Works on all devices, from mobile to desktop
 
-**Use Lovable**
+## 🛠️ Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b8c4c6c1-7b00-4847-8003-93e1560b89a0) and start prompting.
+- **React**: Frontend library for building user interfaces
+- **TypeScript**: For type safety and better developer experience
+- **Tailwind CSS**: For styling and responsive design
+- **React Router**: For navigation and routing
+- **Shadcn UI**: Component library for consistent design
+- **React Hook Form**: For form handling and validation
+- **Zod**: For schema validation
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📝 Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v14 or higher)
+- npm or yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
-
+1. Clone the repository:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+git clone https://github.com/your-username/college-event-aggregator.git
+cd college-event-aggregator
 ```
 
-**Edit a file directly in GitHub**
+2. Install dependencies:
+```sh
+npm install
+# or
+yarn install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+3. Start the development server:
+```sh
+npm run dev
+# or
+yarn dev
+```
 
-**Use GitHub Codespaces**
+4. Open your browser and navigate to `http://localhost:8080`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📚 Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/           # Reusable UI components
+├── data/                 # Mock data for events
+├── hooks/                # Custom React hooks
+├── lib/                  # Utility functions
+├── pages/                # Application pages
+├── types/                # TypeScript type definitions
+├── App.tsx               # Main application component
+└── main.tsx              # Entry point
+```
 
-This project is built with:
+## 🔍 Features Explained
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Event Dashboard
+The dashboard displays events in a card-based layout, showing key information such as event title, description, date, location, and type. Featured events are highlighted at the top.
 
-## How can I deploy this project?
+### Event Filtering
+Users can filter events using various criteria:
+- Text search across titles, descriptions, and college names
+- Event type (hackathon, workshop, tech talk, etc.)
+- College/university
+- Location
+- Date range
 
-Simply open [Lovable](https://lovable.dev/projects/b8c4c6c1-7b00-4847-8003-93e1560b89a0) and click on Share -> Publish.
+### Event Submission
+The submission form allows users to add new events with the following information:
+- Event title and description
+- Date and time
+- Location (physical or virtual)
+- College/university
+- Event type
+- Event website/registration link
+- Optional image URL
 
-## Can I connect a custom domain to my Lovable project?
+### Future Improvements
+- User authentication for event submission
+- Event bookmarking and calendar integration
+- Automated event scraping from college websites
+- Email notifications for upcoming events
+- Admin panel for content moderation
 
-Yes, you can!
+## 📱 Responsive Design
+The application is fully responsive and optimized for all device sizes:
+- Mobile: Single column layout
+- Tablet: Two-column layout for event cards
+- Desktop: Three-column layout with additional features
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🙏 Acknowledgements
+- [Shadcn UI](https://ui.shadcn.com/) for beautiful UI components
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
+- [Lucide Icons](https://lucide.dev/) for the icon set
+- [date-fns](https://date-fns.org/) for date formatting
